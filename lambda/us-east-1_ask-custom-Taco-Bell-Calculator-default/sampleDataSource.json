@@ -1,0 +1,54 @@
+{
+    "tacoBellCalculatorData": {
+        "type": "object",
+        "properties": {
+            "dollars": "$150",
+            "itemsCanBuy": [
+                [
+                    {
+                        "name": "Baja Blast Freeze",
+                        "src": "https://s3.amazonaws.com/apl-community-code/tacobell/baja_blast_freeze.jpg",
+                        "howMany": 15
+                    },
+                    {
+                        "name": "Bacon Club Chalupa",
+                        "src": "https://s3.amazonaws.com/apl-community-code/tacobell/bacon_club_chalupa.jpg",
+                        "howMany": 3
+                    },
+                    {
+                        "name": "Cheesy Bean and Rice Burrito",
+                        "src": "https://s3.amazonaws.com/apl-community-code/tacobell/cheesy_bean_and_rice_burrito.jpg",
+                        "howMany": 7
+                    },
+                    {
+                        "name": "Crunchy Taco",
+                        "src": "https://s3.amazonaws.com/apl-community-code/tacobell/crunchy_taco.jpg",
+                        "howMany": 10
+                    }
+                ],
+                [
+                    {
+                        "name": "Caramel Apple Empanada",
+                        "src": "https://s3.amazonaws.com/apl-community-code/tacobell/carmel_apple_empanada.jpg",
+                        "howMany": 15
+                    },
+                    {
+                        "name": "Cool Ranch Doritos Locos Tacos",
+                        "src": "https://s3.amazonaws.com/apl-community-code/tacobell/cool_ranch_doritos_locos_tacos.jpg",
+                        "howMany": 3
+                    },
+                    {
+                        "name": "Fiesta Taco Salad with Beef",
+                        "src": "https://s3.amazonaws.com/apl-community-code/tacobell/fiesta_taco_salad_beef.jpg",
+                        "howMany": 7
+                    },
+                    {
+                        "name": "Gordita Supreme with Beef",
+                        "src": "https://s3.amazonaws.com/apl-community-code/tacobell/godita_supreme_beef.jpg",
+                        "howMany": 10
+                    }
+                ]
+            ]
+        }
+    }
+}

@@ -1,0 +1,129 @@
+{
+    "type": "APL",
+    "version": "1.0",
+    "theme": "dark",
+    "import": [],
+    "resources": [
+        {
+            "description": "Colors",
+            "colors": {
+                "myPink": "#F925B4",
+                "myBlue": "#2A4AD1",
+                "myYellow": "#FBCC2E"
+            }
+        }
+    ],
+    "styles": {},
+    "layouts": {
+        "ListItem": {
+            "parameters": [
+                "src",
+                "name",
+                "howMany"
+            ],
+            "items": [
+                {
+                    "type": "Container",
+                    "alignItems": "center",
+                    "items": [
+                                        {
+                                            "type": "Image",
+                                            "source": "${src}",
+                                            "height": "40vh",
+                                            "width": "40vh"
+                                        },
+                                        {
+                                            "type": "Container",
+                                            "direction": "row",
+                                            "alignItems": "center",
+                                            "justifyContent": "center",
+                                            "items": [{
+                                            "type": "Text",
+                                            "text": "${howMany}",
+                                            "fontSize": "4vw",
+                                            "width": "10vh",
+                                            "color": "@myPink",
+                                            "textAlign": "center",
+                                            "textAlignVertical": "center",
+                                            "height": "15vh"},
+                                            {
+                                            "type": "Text",
+                                            "text": "${name}s",
+                                            "fontSize": "2vw",
+                                            "width": "30vh",
+                                            "textAlign": "center",
+                                            "textAlignVertical": "center",
+                                            "height": "15vh"}]
+                                        }
+                        
+                    ]
+                }
+            ]
+        }
+    },
+    "mainTemplate": {
+        "parameters": [
+            "datasource"
+        ],
+        "items": [
+                {
+                    "type": "Container",
+                    "height": "100vh",
+                    "width": "100vw",
+                    "items": [
+                        {
+                            "type": "Frame",
+                            "height": "100vh",
+                            "width": "100vw",
+                            "backgroundColor": "black",
+                            "position": "absolute"
+                        },
+                        {
+                            "type": "Text",
+                            "text": "Here's what you can buy for ${datasource.tacoBellCalculatorData.properties.dollars}",
+                            "height": "30vh",
+                            "width": "100vw",
+                            "textAlign": "center",
+                            "textAlignVertical": "center",
+                            "fontSize": "5vw"
+                        },
+                        {
+                            "type": "Pager",
+                            "width": "100vw",
+                            "height": "70vh",
+                            "alignItems": "center",
+                            "items": [
+                                {
+                                    "type": "Container",
+                                    "data": "${datasource.tacoBellCalculatorData.properties.itemsCanBuy[0]}",
+                                    "direction": "row",
+                            "justifyContent": "center",
+                                    "items": [
+                                        {
+                                            "type": "ListItem",
+                                            "src": "${data.src}",
+                                            "name": "${data.name}",
+                                            "howMany": "${data.howMany}"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "Container",
+                                    "data": "${datasource.tacoBellCalculatorData.properties.itemsCanBuy[1]}",
+                                    "direction": "row",
+                                    "items": [
+                                        {
+                                            "type": "ListItem",
+                                            "src": "${data.src}",
+                                            "name": "${data.name}",
+                                            "howMany": "${data.howMany}"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+    }
+}

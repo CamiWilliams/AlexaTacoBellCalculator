@@ -1,0 +1,63 @@
+{
+    "type": "APL",
+    "version": "1.0",
+    "theme": "dark",
+    "import": [],
+    "resources": [
+        {
+            "description": "Colors",
+            "colors": {
+                "myPink": "#F925B4",
+                "myBlue": "#2A4AD1",
+                "myYellow": "#FBCC2E"
+            }
+        }
+    ],
+    "styles": {},
+    "layouts": {},
+    "mainTemplate": {
+        "items": [
+                {
+                    "type": "Container",
+                    "height": "100vh",
+                    "width": "100vw",
+                    "items": [
+                        {
+                            "type": "Frame",
+                            "height": "100vh",
+                            "width": "100vw",
+                            "backgroundColor": "black",
+                            "position": "absolute"
+                        },
+                        {
+                            "type": "Image",
+                            "source": "https://s3.amazonaws.com/apl-community-code/tacobell/tacobellsign.png",
+                            "width": "100vw",
+                            "height": "100vh",
+                            "position": "absolute",
+                            "left": "-20vw",
+                            "top": "1vh"
+                        },
+                        {
+                            "type": "Text",
+                            "text": "Taco Bell Calculator",
+                            "fontSize": "9vw",
+                            "fontWeight": "100",
+                            "position": "absolute",
+                            "left": "50vw",
+                            "top": "10vh"
+                        },
+                        {
+                            "type": "Text",
+                            "text": "How much money do you have?",
+                            "fontSize": "4vw",
+                            "color": "@myPink",
+                            "position": "absolute",
+                            "left": "50vw",
+                            "top": "50vh"
+                        }
+                    ]
+                }
+            ]
+    }
+}

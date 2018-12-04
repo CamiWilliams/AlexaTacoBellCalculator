@@ -1,0 +1,35 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "Calculate how much you can buy at Taco Bell!",
+          "examplePhrases": [
+            "Alexa open taco bell calculator",
+            "Alexa tell taco bell calulator I want to spend $15",
+            "Alexa ask taco bell calculator how much I can buy for $15"
+          ],
+          "name": "Taco Bell Calculator",
+          "description": "Sample Full Description"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "Sample Testing Instructions.",
+      "category": "EDUCATION_AND_REFERENCE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "./lambda/us-east-1_ask-custom-Taco-Bell-Calculator-default"
+        },
+        "interfaces": [
+          {
+            "type": "ALEXA_PRESENTATION_APL"
+          }
+        ]
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

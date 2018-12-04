@@ -1,0 +1,43 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "taco bell calculator",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "CalculateIntent",
+          "slots": [
+            {
+              "name": "dollars",
+              "type": "AMAZON.NUMBER"
+            }
+          ],
+          "samples": [
+            "i have {dollars} dollars",
+            "i got {dollars} dollars",
+            "i have got {dollars} dollars",
+            "i have about {dollars} dollars",
+            "{dollars} dollars",
+            "how much can i buy for {dollars} dollars",
+            "i want to spend {dollars} dollars",
+            "what can i buy for {dollars} dollars",
+            "what can i get with {dollars} dollars",
+            "can i spend {dollars} dollars"
+          ]
+        }
+      ],
+      "types": []
+    }
+  }
+}
